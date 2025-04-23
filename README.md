@@ -63,6 +63,7 @@ src/
 │   ├── FallbackUI.tsx            # Reusable fallback UI for error handling
 ├── data/
 │   ├── heroData.json             # Static data for the hero section
+│   ├── menuData.json             # Static data for the menu
 │   └── announcementBar.json      # Static data for the announcement bar
 ├── public/
 │   └── images/                   # Static assets (e.g., hero images)
