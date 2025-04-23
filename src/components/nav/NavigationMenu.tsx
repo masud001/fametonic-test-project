@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const NavigationMenu: React.FC<Props> = ({ menuItems }) => (
-  <nav className="hidden md:flex gap-x-10 items-center" aria-label="Main navigation">
+  <nav className="hidden md:flex gap-x-10 items-center" aria-label="Main navigation" role="navigation">
     {menuItems.map((item) => (
       <MenuItemLink key={item.id} id={item.id} label={item.label} link={item.link} />
     ))}

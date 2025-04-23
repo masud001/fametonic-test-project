@@ -17,7 +17,6 @@ export const MobileMenu: React.FC<Props> = ({ menuItems, closeMenu, isOpen }) =>
     } else {
       document.body.style.overflow = ""; // Re-enable scrolling
     }
-
     // Cleanup on unmount
     return () => {
       document.body.style.overflow = ""; // Ensure scrolling is re-enabled
@@ -40,6 +39,7 @@ export const MobileMenu: React.FC<Props> = ({ menuItems, closeMenu, isOpen }) =>
               label={item.label}
               link={item.link}
               onClick={closeMenu} // Close menu on link click
+              tabIndex={isOpen ? 0 : -1} // Make links focusable only when the menu is open
             />
           ))}
         </nav>

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "message": "<h3><span> <span class='text-[#00E7F9] font-black'>FRESH BEGINNINGS SALE:</span></span><span class='text-white'> Extra 25% OFF, Limited Spots - start your journey today!</span></h3>",
+    "message": "<span> <span class='text-[#00E7F9] font-black'>FRESH BEGINNINGS SALE:</span></span><span class='text-white'> Extra 25% OFF, Limited Spots - start your journey today!</span>",
     "link": "/sale",
     "icon": "🚀"
   }
