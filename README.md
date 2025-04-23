@@ -73,6 +73,16 @@ src/
     └── utils.ts                  # Utility functions (e.g., error logging)
 ```
 
+## Performance (google page speed monitor)
+
+## Screenshot for Mobile
+
+![Screenshot of Mobile](./public/screenshot/Screenshot-for-mobile.png)
+
+## Screenshot for Desktop
+
+![Screenshot of Desktop](./public/screenshot/Screenshot-for-desktop.png)
+
 ## Future Enhancements
 
 - Dynamic Data Fetching:

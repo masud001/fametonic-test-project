@@ -20,7 +20,7 @@ export const MenuItemLink: React.FC<MenuItemLinkProps> = ({
     key={id}
     href={link}
     onClick={onClick}
-    className={`text-menu text-lg hover:text-white transition-colors duration-300 ${className}`}
+    className={`text-menu font-semibold font-figtree text-lg hover:text-text transition-colors duration-300 ${className}`}
   >
     {label}
   </Link>

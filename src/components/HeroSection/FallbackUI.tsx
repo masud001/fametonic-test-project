@@ -12,7 +12,7 @@ const FallbackUI: React.FC<FallbackUIProps> = ({
 }) => {
   return (
     <section
-      className={`w-full flex flex-col gap-y-10 justify-center items-center min-h-[300px] bg-background text-white ${className}`}
+      className={`w-full flex flex-col gap-y-10 justify-center items-center min-h-[300px] bg-background text-text ${className}`}
     >
       <div className="mb-8">
         <Image

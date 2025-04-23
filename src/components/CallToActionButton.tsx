@@ -17,7 +17,7 @@ const CallToActionButton: FC<CallToActionButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`text-text flex gap-2.5 justify-center items-center px-10 py-2 bg-primary rounded-xl w-full cursor-pointer  drop-shadow-(--my-drop-shadow)
+      className={`text-text font-bold font-figtree text-xl flex gap-2.5 justify-center items-center px-10 py-2 bg-primary rounded-xl w-full cursor-pointer  drop-shadow-(--my-drop-shadow)
         ${className}`}
       aria-label={ariaLabel || "Call to action"} 
     >

@@ -21,7 +21,7 @@ const FeatureItem: FC<FeatureItemProps> = ({ children, className, icon }) => {
         {icon || "✨"}
       </span>
 
-      <p className="text-white font-semibold font-figtree text-[16px]">{children}</p>
+      <p className="text-text font-semibold font-figtree text-[16px]">{children}</p>
     </div>
   );
 };

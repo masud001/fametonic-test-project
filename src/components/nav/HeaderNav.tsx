@@ -25,7 +25,7 @@ const HeaderNav: React.FC = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="w-full flex justify-center bg-[#010101] shadow-md relative">
+    <header className="w-full flex justify-center bg-background shadow-md relative">
       <div className="container lg:max-w-[992px] flex justify-between items-center pt-5 lg:pt-9 px-5 md:px-0 relative">
         {/* Logo */}
         <Logo />

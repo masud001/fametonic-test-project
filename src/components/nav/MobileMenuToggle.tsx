@@ -13,9 +13,9 @@ export const MobileMenuToggle: React.FC<Props> = ({ isOpen, toggle }) => (
       aria-expanded={isOpen}
       className="relative z-20 flex flex-col gap-y-1.5"
     >
-      <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
-      <span className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`} />
-      <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+      <span className={`block w-6 h-0.5 bg-text transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
+      <span className={`block w-6 h-0.5 bg-text transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`} />
+      <span className={`block w-6 h-0.5 bg-text transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
     </button>
   </div>
 );

@@ -34,7 +34,7 @@ export const AnnouncementItem: React.FC<AnnouncementItemProps> = ({
       {link ? (
         <Link
           href={link}
-          className="no-underline text-white hover:underline focus:underline"
+          className="no-underline text-text hover:underline focus:underline"
           dangerouslySetInnerHTML={{ __html: message }}
           aria-label={`Announcement: ${stripHtml(message)}`}
         ></Link>

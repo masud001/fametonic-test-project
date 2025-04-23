@@ -37,14 +37,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ data, className }) => {
         <div className="w-full md:w-1/2 text-center md:text-start flex-1 mb-8 lg:mb-0 md:z-10">
           <h1
             id="hero-heading"
-            className="text-[35px] leading-[42px] font-bold max-[480px]:text-[25px] max-[480px]:leading-[30px] text-white font-urbanist"
+            className="text-[35px] leading-[42px] font-bold max-[480px]:text-[25px] max-[480px]:leading-[30px] text-text font-urbanist"
           >
             {data.heading}
           </h1>
           <h2
             role="heading"
             aria-level={1}
-            className="text-[35px] leading-[42px] font-bold max-[480px]:text-[25px] max-[480px]:leading-[30px] text-shadow-[0_4px_2px_#fc004e] text-[#00E7F9] font-urbanist"
+            className="text-[35px] leading-[42px] font-bold max-[480px]:text-[25px] max-[480px]:leading-[30px] text-shadow-[0_4px_2px_#fc004e] text-secondary font-urbanist"
             aria-describedby="hero-subheading"
           >
             {data.subheading}
