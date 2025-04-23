@@ -24,38 +24,14 @@ const figtree = Figtree({
 
 // Metadata for the Application
 export const metadata: Metadata = {
-  title: {
-    default: "Fametonic: The Smart Way to Go Viral on Social Media",
-    template: "%s | Fametonic: The Smart Way to Go Viral on Social Media",
-  },
-  description:
-    "Fametonic helps you grow your social media influence with AI-powered tools and expert-led courses.",
-  alternates: {
-    canonical: 'https://fametonic-preview.netlify.app/',
-    languages: {
-      'en-US': 'https://fametonic-preview.netlify.app//en-US',
-      'de-DE': 'https://fametonic-preview.netlify.app//de-DE'
-    }
-  },
-  openGraph: {
-    title: 'Fametonic: The Smart Way to Go Viral on Social Media',
-    description: 'helps you grow your social media influence with AI-powered tools and expert-led courses.',
-    url: 'https://fametonic-preview.netlify.app/',
-    siteName: 'My Site',
-    images: [{ url: 'https://fametonic-preview.netlify.app//og.png' }]
-  },
+  title: "Fametonic: The Smart Way to Go Viral on Social Media",
+  description:"Fametonic helps you grow your social media influence with AI-powered tools and expert-led courses.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body
-        className={`${urbanist.variable} ${figtree.variable} antialiased`}
-      >
+      <body className={`${urbanist.variable} ${figtree.variable} antialiased`}>
         {children}
       </body>
     </html>
