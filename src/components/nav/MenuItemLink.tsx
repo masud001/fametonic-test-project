@@ -7,6 +7,7 @@ type MenuItemLinkProps = {
   link: string;
   onClick?: () => void; 
   className?: string; 
+  isActive?: boolean; // Optional prop to indicate if the link is active
 };
 
 export const MenuItemLink: React.FC<MenuItemLinkProps> = ({
@@ -15,11 +16,13 @@ export const MenuItemLink: React.FC<MenuItemLinkProps> = ({
   link,
   onClick,
   className = "",
+  isActive = false, // Default to false if not provided
 }) => (
   <Link
     key={id}
     href={link}
     onClick={onClick}
+    aria-current={isActive ? "page" : undefined} // Use aria-current for active link
     className={`text-menu font-semibold font-figtree text-lg hover:text-text transition-colors duration-300 ${className}`}
   >
     {label}

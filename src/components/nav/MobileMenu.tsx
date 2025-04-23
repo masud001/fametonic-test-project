@@ -28,6 +28,7 @@ export const MobileMenu: React.FC<Props> = ({ menuItems, closeMenu, isOpen }) =>
       className={`fixed top-[150px] inset-0 z-10 bg-background flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
+      aria-hidden={!isOpen} // Hide from screen readers when closed
     >
       <nav className="flex flex-col items-center gap-y-8">
         {menuItems.map((item) => (

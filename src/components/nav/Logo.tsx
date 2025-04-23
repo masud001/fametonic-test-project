@@ -9,7 +9,7 @@ export const Logo: React.FC = () => (
       <Link href="/" aria-label="Navigate to the homepage">
         <Image
           src="/images/mobile-logo.svg"
-          alt="Fametonic Logo - Mobile View"
+          alt="Fametonic Logo - Navigate to the homepage"
           width={120}
           height={40}
           loading="lazy"
@@ -22,7 +22,7 @@ export const Logo: React.FC = () => (
       <Link href="/" aria-label="Navigate to the homepage">
         <Image
           src="/images/desktop-logo.svg"
-          alt="Fametonic Logo - Desktop View"
+          alt="Fametonic Logo - Navigate to the homepage"
           width={174}
           height={74}
           loading="lazy"
