@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import FocusLock from "react-focus-lock";
 import { MenuItemLink } from "./MenuItemLink";
 import { MenuItem } from "./HeaderNav";
 
@@ -24,23 +25,25 @@ export const MobileMenu: React.FC<Props> = ({ menuItems, closeMenu, isOpen }) =>
   }, [isOpen]);
 
   return (
-    <div
-      className={`fixed top-[150px] inset-0 z-10 bg-background flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out ${
-        isOpen ? "translate-x-0" : "translate-x-full"
-      }`}
-      aria-hidden={!isOpen} // Hide from screen readers when closed
-    >
-      <nav className="flex flex-col items-center gap-y-8">
-        {menuItems.map((item) => (
-          <MenuItemLink
-            key={item.id}
-            id={item.id}
-            label={item.label}
-            link={item.link}
-            onClick={closeMenu} // Close menu on click
-          />
-        ))}
-      </nav>
-    </div>
+    <FocusLock disabled={!isOpen}>
+      <div
+        className={`fixed top-[150px] inset-0 z-10 bg-background flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+        aria-hidden={!isOpen} // Indicate visibility to screen readers
+      >
+        <nav className="flex flex-col items-center gap-y-8" aria-label="Mobile navigation">
+          {menuItems.map((item) => (
+            <MenuItemLink
+              key={item.id}
+              id={item.id}
+              label={item.label}
+              link={item.link}
+              onClick={closeMenu} // Close menu on link click
+            />
+          ))}
+        </nav>
+      </div>
+    </FocusLock>
   );
 };
