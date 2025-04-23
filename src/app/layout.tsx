@@ -31,18 +31,18 @@ export const metadata: Metadata = {
   description:
     "Fametonic helps you grow your social media influence with AI-powered tools and expert-led courses.",
   alternates: {
-    canonical: 'https://example.com',
+    canonical: 'https://fametonic-preview.netlify.app/',
     languages: {
-      'en-US': 'https://example.com/en-US',
-      'de-DE': 'https://example.com/de-DE'
+      'en-US': 'https://fametonic-preview.netlify.app//en-US',
+      'de-DE': 'https://fametonic-preview.netlify.app//de-DE'
     }
   },
   openGraph: {
     title: 'Fametonic: The Smart Way to Go Viral on Social Media',
     description: 'helps you grow your social media influence with AI-powered tools and expert-led courses.',
-    url: 'https://example.com',
+    url: 'https://fametonic-preview.netlify.app/',
     siteName: 'My Site',
-    images: [{ url: 'https://example.com/og.png' }]
+    images: [{ url: 'https://fametonic-preview.netlify.app//og.png' }]
   },
 };
 
