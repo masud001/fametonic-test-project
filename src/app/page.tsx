@@ -2,6 +2,7 @@ import AnnouncementBar from "@/components/AnnouncementBar/AnnouncementBar";
 import HeaderNav from "@/components/nav/HeaderNav";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import heroData from "@/data/heroData.json";
+import HeroSectionTwo from "@/components/HeroSection/HeroSectionTwo";
 
 const Home = async () => {
   let data = null;
@@ -21,6 +22,8 @@ const Home = async () => {
       <AnnouncementBar className="w-full bg-gradient-to-r from-[#FC004E] to-[#10CBE0] text-white font-figtree" />
       <HeaderNav />
       <HeroSection data={data} />
+      {/* with context api  */}
+      <HeroSectionTwo className="bg-background" />
     </main>
   );
 };
