@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Urbanist, Figtree } from "next/font/google";
 import "./globals.css";
-import { HeroProvider } from "@/context/HeroContext";
+// import { HeroProvider } from "@/context/HeroContext";
 
 // Google Fonts Configuration
 const urbanist = Urbanist({
@@ -33,9 +33,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={`${urbanist.variable} ${figtree.variable} antialiased`}>
-        <HeroProvider>
+        {/* <HeroProvider> */}
           {children}
-        </HeroProvider>
+        {/* </HeroProvider> */}
       </body>
     </html>
   );
