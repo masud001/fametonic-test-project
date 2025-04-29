@@ -2,7 +2,7 @@ import AnnouncementBar from "@/components/AnnouncementBar/AnnouncementBar";
 import HeaderNav from "@/components/nav/HeaderNav";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import heroData from "@/data/heroData.json";
-import HeroSectionTwo from "@/components/HeroSection/HeroSectionTwo";
+// import HeroSectionTwo from "@/components/HeroSection/HeroSectionTwo";
 
 const Home = async () => {
   let data = null;
@@ -23,7 +23,7 @@ const Home = async () => {
       <HeaderNav />
       <HeroSection data={data} />
       {/* with context api  */}
-      <HeroSectionTwo className="bg-background" />
+      {/* <HeroSectionTwo className="bg-background" /> */}
     </main>
   );
 };
