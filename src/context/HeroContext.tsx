@@ -1,5 +1,5 @@
 "use client";
-import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import React, { createContext, useContext, useState, useEffect, useMemo, ReactNode } from "react";
 import heroData from "@/data/heroData.json"; // Replace with API call if needed
 
 // Define the shape of the Hero Data
@@ -43,9 +43,9 @@ export const HeroProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
     fetchHeroData();
   }, []);
-
+  const value = useMemo(() => ({ heroData: data, loading, error }), [data, loading, error]);
   return (
-    <HeroContext.Provider value={{ heroData: data, loading, error }}>
+    <HeroContext.Provider value={value}>
       {children}
     </HeroContext.Provider>
   );
